@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon" />
+    <title>Animation Css</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            background: #001122;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            perspective: 30px;
+        }
+
+        .frame {
+            width: 700px;
+            height: 700px;
+            position: absolute;
+            border-radius: 50px;
+            border: 5px solid #0ff;
+            box-shadow: 0 0 10px #0ff,
+                0 0 30px #0ff;
+            animation: zooming 4s linear infinite alternate;
+        }
+
+        .frame:nth-child(1) {
+            transform: rotate(40deg) translateY(0px) translateZ(0px);
+            opacity: 1;
+            animation-delay: -1s;
+        }
+
+        .frame:nth-child(2) {
+            transform: rotate(40deg) translateY(50px) translateZ(-10px);
+            opacity: 0.9;
+            animation-delay: -1.3s;
+        }
+
+        .frame:nth-child(3) {
+            transform: rotate(40deg) translateY(100px) translateZ(-20px);
+            opacity: 0.85;
+            animation-delay: -1.5s;
+        }
+
+        .frame:nth-child(4) {
+            transform: rotate(40deg) translateY(150px) translateZ(-30px);
+            opacity: 0.8;
+            animation-delay: -1.7s;
+        }
+
+        .frame:nth-child(5) {
+            transform: rotate(40deg) translateY(200px) translateZ(-40px);
+            opacity: 0.75;
+            animation-delay: -1.9s;
+        }
+
+        .frame:nth-child(6) {
+            transform: rotate(40deg) translateY(250px) translateZ(-50px);
+            opacity: 0.7;
+            animation-delay: -2.1s;
+        }
+
+        .frame:nth-child(7) {
+            transform: rotate(40deg) translateY(300px) translateZ(-60px);
+            opacity: 0.65;
+            animation-delay: -2.3s;
+        }
+
+        .frame:nth-child(8) {
+            transform: rotate(40deg) translateY(350px) translateZ(-70px);
+            opacity: 0.6;
+            animation-delay: -2.5s;
+        }
+
+        .frame:nth-child(9) {
+            transform: rotate(40deg) translateY(400px) translateZ(-80px);
+            opacity: 0.5;
+            animation-delay: -2.7s;
+        }
+
+        .frame:nth-child(10) {
+            transform: rotate(40deg) translateY(450px) translateZ(-90px);
+            opacity: 0.4;
+            animation-delay: -2.9s;
+        }
+
+        .frame:nth-child(11) {
+            transform: rotate(40deg) translateY(500px) translateZ(-100px);
+            opacity: 0.3;
+            animation-delay: -3.1s;
+        }
+
+        .frame:nth-child(12) {
+            transform: rotate(40deg) translateY(550px) translateZ(-110px);
+            opacity: 0.2;
+            animation-delay: -3.3s;
+        }
+
+        .frame:nth-child(13) {
+            transform: rotate(40deg) translateY(600px) translateZ(-120px);
+            opacity: 0.1;
+            animation-delay: -3.5s;
+        }
+
+        .frame:nth-child(14) {
+            transform: rotate(40deg) translateY(650px) translateZ(-130px);
+            opacity: 0.05;
+            animation-delay: -3.7s;
+        }
+
+        @keyframes zooming {
+            0% {
+                transform: scale(0.2) rotate(40deg);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(1) rotate(180deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="frame"></div>
+        <div class="frame"></div>
+        <div class="frame"></div>
+        <div class="frame"></div>
+        <div class="frame"></div>
+        <div class="frame"></div>
+        <div class="frame"></div>
+        <div class="frame"></div>
+        <div class="frame"></div>
+        <div class="frame"></div>
+        <div class="frame"></div>
+        <div class="frame"></div>
+        <div class="frame"></div>
+        <div class="frame"></div>
+    </div>
+</body>
+
+</html>

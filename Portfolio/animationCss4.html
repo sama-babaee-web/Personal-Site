@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon" />
+    <title>Animation Css</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            background: #001122;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cube5 {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            transform-style: preserve-3d;
+            transform: rotateX(-30deg);
+            animation: animateRotate 10s linear infinite;
+        }
+
+        @keyframes animateRotate {
+            0% {
+                transform: rotateX(-15deg) rotateY(0deg);
+            }
+
+            100% {
+                transform: rotateX(-15deg) rotateY(360deg);
+            }
+        }
+
+        .cube5 div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+        }
+
+        .cube5 div span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: 1px solid orange;
+            border-radius: 20px;
+            transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+        }
+
+        .top {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 300px;
+            height: 300px;
+            background: transparent;
+            transform: rotateX(90deg) translateZ(150px);
+            border-radius: 20px;
+            border: 3px solid white;
+
+        }
+
+        .bottom {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 300px;
+            height: 300px;
+            background: transparent;
+            transform: rotateX(90deg) translateZ(-150px);
+            border-radius: 20px;
+            border: 3px solid white;
+        }
+
+        .div-line {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .line {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: transparent;
+            border: 2px solid #7400b8;
+
+            ​ 107
+        }
+
+        108 ​ 109 div .line:nth-child(3) {
+            110 width: 84%;
+            111 height: 84%;
+            112 border-radius: 50%;
+            113 background: transparent;
+            114 border: 2px solid #5e60ce;
+            115 position: absolute;
+            116 transform: translate(-50%, -50%);
+            JS JS Options 1 ​ Console Assets Comments CodePen: Unlock all of CodePen
+        }
+
+        div .line:nth-child(2) {
+            width: 92%;
+            height: 92%;
+            border-radius: 50%;
+            background: transparent;
+            border: 2px solid #6930c3;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+
+        }
+
+        div .line:nth-child(3) {
+            width: 84%;
+            height: 84%;
+            border-radius: 50%;
+            background: transparent;
+            border: 2px solid #5e60ce;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+        }
+
+        div .line:nth-child(4) {
+            width: 76%;
+            height: 76%;
+            border-radius: 50%;
+            background: transparent;
+            border: 2px solid #5390d9;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+        }
+
+        div .line:nth-child(5) {
+            width: 68%;
+            height: 68%;
+            border-radius: 50%;
+            background: transparent;
+            border: 2px solid #4ea8de;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+        }
+
+        div .line:nth-child(6) {
+            width: 60%;
+            height: 60%;
+            border-radius: 50%;
+            background: transparent;
+            border: 2px solid #48bfe3;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+        }
+
+        div .line:nth-child(7) {
+            width: 52%;
+            height: 52%;
+            border-radius: 50%;
+            background: transparent;
+            border: 2px solid #56cfe1;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+        }
+
+        div .line:nth-child(8) {
+            width: 44%;
+            height: 44%;
+            border-radius: 50%;
+            background: transparent;
+            border: 2px solid #64dfdf;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+        }
+
+        div .line:nth-child(9) {
+            width: 36%;
+            height: 36%;
+            border-radius: 50%;
+            background: transparent;
+            border: 2px solid #72efdd;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+        }
+
+        div .line:nth-child(10) {
+            width: 28%;
+            height: 28%;
+            border-radius: 50%;
+            background: transparent;
+            border: 2px solid #80ffdb;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+        }
+
+        div .line:nth-child(11) {
+            width: 20%;
+            height: 20%;
+            border-radius: 50%;
+            background: transparent;
+            border: 2px solid #e0aaff;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+        }
+
+        div .line:nth-child(12) {
+            width: 12%;
+            height: 12%;
+            border-radius: 50%;
+            background: transparent;
+            border: 2px solid #c77dff;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+        }
+
+        div .line:nth-child(13) {
+            width: 5%;
+            height: 5%;
+            border-radius: 50%;
+            background: orange;
+            border: 1px solid orange;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="cube5">
+
+            <div class="top">
+                <div class="div-line">
+                    <p class="line"></p>
+                    <p class="line"></p>
+                    <p class="line"></p>
+                    <p class="line"></p>
+                    <p class="line"></p>
+                    <p class="line"></p>
+                    <p class="line"></p>
+                    <p class="line"></p>
+                    <p class="line"></p>
+                    <p class="line"></p>
+                    <p class="line"></p>
+                    <p class="line"></p>
+                    <p class="line"></p>
+                </div>
+            </div>
+
+            <!-- spans -->
+            <div>
+                <span style="--i:0">
+                    <div class="div-line">
+                        <p class="line"></p>
+                        <p class="line"></p>
+                        <p class="line"></p>
+                        <p class="line"></p>
+                        <p class="line"></p>
+                        <p class="line"></p>
+                        <p class="line"></p>
+                        <p class="line"></p>
+                        <p class="line"></p>
+                        <p class="line"></p>
+                        <p class="line"></p>
+                        <p class="line"></p>
+                        <p class="line"></p>
+                    </div>
+                </span>
+
+                <span style="--i:1">
+                    <div class="div-line">
+                        <p class="line"></p>
+                        <p class="line"></p>
+                        <p class="line"></p>
+                        <p class="line"></p>
+                        <p class="line"></p>
+                        <p class="line"></p>
+                        <p class="line"></p>
+                        <p class="line"></p>
+                        <p class="line"></p>
+                        <p class="line"></p>
+                        <p class="line"></p>
+                        <p class="line"></p>
+                        <p class="line"></p>
+                    </div>
+                </span>
+
+                <span style="--i:2">
+                    <div class="div-line">
+                        <p class="line"></p>
+                        <p class="line"></p>
+                        <p class="line"></p>
+                        <p class="line"></p>
+                        <p class="line"></p>
+                        <p class="line"></p>
+                        <p class="line"></p>
+                        <p class="line"></p>
+                        <p class="line"></p>
+                        <p class="line"></p>
+                        <p class="line"></p>
+                        <p class="line"></p>
+                        <p class="line"></p>
+                    </div>
+                </span>
+
+                <span style="--i:3">
+                    <div class="div-line">
+                        <p class="line"></p>
+                        <p class="line"></p>
+                        <p class="line"></p>
+                        <p class="line"></p>
+                        <p class="line"></p>
+                        <p class="line"></p>
+                        <p class="line"></p>
+                        <p class="line"></p>
+                        <p class="line"></p>
+                        <p class="line"></p>
+                        <p class="line"></p>
+                        <p class="line"></p>
+                        <p class="line"></p>
+                    </div>
+                </span>
+
+            </div>
+            <!-- spans-end -->
+
+            <div class="bottom">
+                <div class="div-line">
+                    <p class="line"></p>
+                    <p class="line"></p>
+                    <p class="line"></p>
+                    <p class="line"></p>
+                    <p class="line"></p>
+                    <p class="line"></p>
+                    <p class="line"></p>
+                    <p class="line"></p>
+                    <p class="line"></p>
+                    <p class="line"></p>
+                    <p class="line"></p>
+                    <p class="line"></p>
+                    <p class="line"></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+</body>
+
+</html>

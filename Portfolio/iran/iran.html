@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>IRAN</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main {
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(green, rgba(93, 90, 90, 0.654), rgba(254, 19, 19, 0.642));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main>div {
+            width: 420px;
+            height: 100px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .main>div::before,
+        .main>div::after {
+            content: ']';
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            color: rgb(0, 0, 0);
+            font-size: 45px;
+            position: absolute;
+            top: 30px;
+            display: block;
+            animation: bulb .5s linear infinite alternate;
+        }
+
+        .main>div::before {
+            right: 5px;
+            top: 24px;
+            animation-delay: 0.5s;
+        }
+
+        .main>div::after {
+            left: 5px;
+            transform: rotate(180deg);
+        }
+
+        @keyframes bulb {
+            to {
+                opacity: 0;
+            }
+        }
+
+        .main>div>span {
+            position: absolute;
+            top: 0px;
+            left: 35px;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            color: white;
+
+        }
+
+        .main>div>span>img {
+            /* border: 1px solid red; */
+            width: 100px;
+            height: 100px;
+        }
+
+        .main>div>ul {
+            position: absolute;
+            top: 0;
+            left: 160px;
+            animation: para linear infinite 5s alternate;
+        }
+
+        @keyframes para {
+            0% {
+                top: 0;
+            }
+
+            23% {
+                top: 0;
+            }
+
+            27% {
+                top: -100px;
+            }
+
+            48% {
+                top: -100px;
+            }
+
+            52% {
+                top: -200px;
+            }
+
+            73% {
+                top: -200px;
+            }
+
+            77% {
+                top: -300px;
+            }
+
+            100% {
+                top: -300px;
+            }
+        }
+
+        .main>div>ul>li {
+            list-style-type: none;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+            margin-right: 50px;
+            align-items: flex-start;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            color: white;
+            font-size: 50px;
+            text-transform: uppercase;
+            /* border: 1px solid red; */
+        }
+
+        .main>div>ul>li:nth-of-type(1) {
+            color: green;
+            text-shadow: 2px 2px 4px #000000;
+
+        }
+        .main>div>ul>li:nth-of-type(1):hover{
+            text-shadow: 4px 0 4px green;
+
+        }
+        .main>div>ul>li:nth-of-type(2) {
+            text-shadow: 2px 2px 4px #000000;
+
+        }
+
+        .main>div>ul>li:nth-of-type(3) {
+            color: red;
+            text-shadow: 2px 2px 4px #000000;
+
+        }
+        .main>div>ul>li:nth-of-type(4) {
+            text-shadow: 2px 2px 4px #000000;
+
+        }
+
+        .main>div>ul>li:nth-of-type(3):hover {
+            text-shadow: 3px 0 3px #FF002B;
+            
+        }
+
+        .main>div>ul>.para>span:nth-of-type(1) {
+            color: red;
+        }
+
+        .main>div>ul>.para>span:nth-of-type(3) {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div>
+            <span><img src="iran.png" alt=""></span>
+            <ul>
+                <li>زن</li>
+                <li>زندگی</li>
+                <li>آزادی</li>
+                <li class="para"><span>امینی</span> <span>_</span><span>مهسا</span> #</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

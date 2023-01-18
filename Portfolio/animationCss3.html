@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon" />
+    <title>Animation Css</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+       @media (max-width : 700px) {
+        body {
+            background: radial-gradient(#490091, #012);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            transform: scale(0.5);
+        }
+
+       }
+       @media (min-width : 701px) {
+        body {
+            background: radial-gradient(#490091, #012);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+       }
+
+
+        /*Piramid*/
+        .pyramid {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            transform-style: preserve-3d;
+            transform: rotateX(-20deg) rotateY(30deg);
+            animation: animate 6s linear infinite;
+        }
+
+        @keyframes animate {
+            0% {
+                transform: rotateX(-20deg) rotateY(-360deg);
+            }
+
+            100% {
+                transform: rotateX(-20deg) rotateY(0deg);
+            }
+        }
+
+        .pyramid div {
+            position: absolute;
+            top: -90px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+        }
+
+        .pyramid div.top span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            background: linear-gradient(#ffffff20, #000000);
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            transform-origin: bottom;
+            transform: rotateY(calc(90deg * var(--i))) translateZ(250px) rotateX(30deg);
+        }
+
+        /*Faces - Eye*/
+        .eye {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            transform-style: preserve-3d;
+            animation: animate2 6s linear infinite;
+        }
+
+        @keyframes animate2 {
+            0% {
+                transform: rotateX(-20deg) rotateY(-360deg);
+            }
+
+            100% {
+                transform: rotateX(-20deg) rotateY(0deg);
+            }
+        }
+
+        .eye div {
+            position: absolute;
+            top: 0;
+            left: 20px;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+        }
+
+        .eye div.faces i {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            color: #ff00e1;
+            text-shadow: 0 0 20px, 0 0 50px;
+            font-size: 150px;
+            transform-style: preserve-3d;
+            transform: rotateY(calc(90deg * var(--i))) translateZ(150px) rotateX(30deg);
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="pyramid">
+        <div class="top">
+            <span style="--i:0;"></span>
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+        </div>
+    </div>
+
+    <div class="eye">
+        <div class="faces">
+            <i class="uil uil-eye" style="--i:0;"></i>
+            <i class="uil uil-eye" style="--i:1;"></i>
+            <i class="uil uil-eye" style="--i:2;"></i>
+            <i class="uil uil-eye" style="--i:3;"></i>
+        </div>
+    </div>
+</body>
+
+</html>

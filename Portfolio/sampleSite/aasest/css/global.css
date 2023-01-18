@@ -1,0 +1,22 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    direction: ltr;
+    font-size: 100%;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+
+div,ul, li, section, header, nav, footer, aside, article, figure, .row{
+    display: flex;
+    flex-wrap: wrap;
+}
